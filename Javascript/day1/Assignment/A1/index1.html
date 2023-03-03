@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <label for="cars">Choose a State:</label>
+
+    <select name="state" id="state" onchange="state()">
+      <option value="state" disabled selected>State</option> 
+      <option value="Gujarat" id="s1">Gujarat</option>
+      <option value="Maharastra" id="s2" >Maharastra</option>
+    </select> 
+    <br>
+    <br>
+    <label for="cars">Choose a City:</label>
+    
+    <select name="default" id="default">
+      <option value="city" disabled selected>City</option> 
+    </select>
+
+    <select name="val1" id="val1" style="display: none;" >
+      <option value="Surat">Surat</option>
+      <option value="Ahmedabad">Ahmedabad</option>
+      <option value="Rajkot">Rajkot</option>
+      <option value="Vadodara">Vadodara</option>
+      <option value="Mehasana">Mehasana</option>
+      <option value="Bharuch">Bharuch</option>
+      <option value="Junagadh">Junagadh</option>
+      <option value="Navsari">Navsari</option>
+      <option value="Vapi">Vapi</option>
+      <option value="Banashkatha">Banashkatha</option>
+      <option value="Kutch">Kutch</option>
+    </select>
+
+    <select name="val1" id="val2" style="display: none;">
+      <option value="Mumbai">Mumbai</option>
+      <option value="Pune">Pune</option>
+      <option value="Nashik">Nashik</option>
+      <option value="Vadodara">Thane</option>
+      <option value="Jalgaon">Jalgaon</option>
+      <option value="Aurangabad">Aurangabad</option>
+      <option value="Solapur">Solapur</option>
+      <option value="Khandala">Khandala</option>
+      <option value="Kolhlapur">Kolhlapur</option>
+    </select>
+
+    <script>
+
+      
+      function state(){
+        // debugger;
+        let s = document.getElementById("state").value;
+        let s1 = document.getElementById("s1").value;
+        let s2 = document.getElementById("s2").value;
+        console.log(s, s1, s2);
+        
+        if(s == s1){
+          document.getElementById("default").style.display = "none";
+          document.getElementById("val1").style.display = "inline";
+          document.getElementById("val2").style.display = "none";
+        }
+        if(s ==s2){
+          document.getElementById("default").style.display = "none";
+          document.getElementById("val1").style.display = "none";
+          document.getElementById("val2").style.display = "inline";
+        }
+      }
+
+    </script>
+
+  </body>
+</html>

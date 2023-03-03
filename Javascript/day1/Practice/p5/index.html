@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <label for="st">Enter the string:</label>
+    <input type="text" id="st"><br><br>
+    <label for="n1">First number:</label>
+    <input type="number" id="n1"><br><br>
+    <label for="n1">First number:</label>
+    <input type="number" id="n2"><br><br>
+    <button type="button" value="Submit" onclick="range()">Submit</button>
+    <p id="info"></p>
+    <script>
+
+      function range() {
+        let st = document.getElementById("st").value;
+        let n1 = document.getElementById("n1").value;
+        let n2 = document.getElementById("n2").value;
+        console.log(st,n1,n2);
+        let ans = st.slice(n1,n2);
+
+        document.getElementById("info").innerHTML = "Answer: " + ans;
+      }
+
+     
+    </script>
+  </body>
+</html>

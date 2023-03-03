@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+
+    <label for="str">Enter string:</label>
+    <input type="text" id="str" onchange="string()">
+    <p id="info"></p>
+    <script>
+      
+
+      function string() {
+        let str = document.getElementById("str").value;
+        if(str.length == 0){
+          document.getElementById("info").innerHTML = "String is blank";
+        }
+        else{
+          document.getElementById("info").innerHTML = "String is not blank";
+        }
+      }
+
+    </script>
+  </body>
+</html>

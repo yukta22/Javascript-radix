@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <label for="btn">Today date:</label>
+    <button type="button" id="btn" value="Submit" onclick="todaydate()">Submit</button>
+  </head>
+  <body>
+    <script>
+
+      function todaydate(){
+        let date = new Date();
+        let currentDate = date.getDate();
+        let currentMonth = date.getMonth();
+        let currentYear = date.getFullYear();
+        document.write('Today date: ' + currentDate);
+        document.write( "/" + currentMonth);
+        document.write( "/" + currentYear);
+      }
+      
+    </script>
+  </body>
+</html>

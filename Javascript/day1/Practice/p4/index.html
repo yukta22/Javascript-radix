@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+
+    <label for="s1">Enter the string:</label>
+    <input type="text" id="s1" onchange="arr()">
+    <p id="arr"></p>
+
+    <script>
+
+      function arr() {
+        let s1 = document.getElementById("s1").value;
+        let array = s1.split("");
+        document.getElementById("arr").innerHTML = array;
+      }
+      
+      
+    </script>
+  </body>
+</html>

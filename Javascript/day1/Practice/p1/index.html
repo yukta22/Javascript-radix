@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <script>
+      let n1 = Number(prompt("Enter number 1:"));
+      let n2 = Number(prompt("Enter number 2:"));
+      let n3 = Number(prompt("Enter number 3:"));
+      let largest;
+      let sum = 0;
+
+      if(n1 >= n2 && n1 >= n3) {
+        largest = n1;
+      }
+      else if(n2 >= n3 && n2 >= n1){
+        largest = n2;
+      }
+      else{
+        largest = n3;
+      }
+
+      if(n1 > 40){
+        sum += n1;
+      }
+      if(n2 > 40){
+
+        sum += n2;
+      }
+      if(n3 > 40){
+        sum += n3;
+      }
+
+      document.write("Largest number: " + largest );
+      document.write("<br>");
+      document.write("Sum: " + sum );
+    </script>
+  </body>
+</html>
