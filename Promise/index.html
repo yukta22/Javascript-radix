@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="str">Enter a String:</label>
+    <input type="text" id="str" />
+    <button onclick="check()">Submit</button>
+    <p id="info"></p>
+
+    <script>
+      let s = document.getElementById('str').value;
+
+      function check() {
+        return new Promise(function (resolve, reject) {
+          if (!isNaN(s)) {
+          }
+        }).then(function () {
+          document.getElementById('gfg').innerHTML =
+            'Wrapped setTimeout after 2000ms';
+        });
+      }
+    </script>
+  </body>
+</html>
