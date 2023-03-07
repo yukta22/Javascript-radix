@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      form {
+        background-color:  #ffcccc;
+      }
+      #save{
+        background-color:  #87f0b5;
+      }
+      #reset{
+        background-color:  #66ffff;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="my-3">
+      <form name="dataForm" class="w-50 py-4 mx-auto px-5" id="myfrm">
+        <label for="eId" class="form-label">Employee Id:</label>
+        <input type="text" id="eId" class="form-control" required>
+        <p id="one"></p>
+        <br />
+        <label for="name" class="form-label">Employee Name:</label>
+        <input type="text" id="name" class="form-control" required>
+        <p id="five"></p><br />
+
+        <label for="age" class="form-label">Age:</label>
+        <input   type="text" id="age" min="17" class="form-control" required>
+        <p id="two"></p>
+        <br />
+        <label for="gender" id="gender" class="form-label">Gender:</label>
+
+        <input
+          type="radio"
+          name="Gender"
+          value="Male"
+          class="form-check-input ms-4"
+        />
+        <label for="Male" class="form-label">Male</label>
+        <input
+          type="radio"
+          name="Gender"
+          value="Female"
+          class="form-check-input ms-4"
+          checked
+        />
+        <label for="Female" class="form-label">Female</label>
+        <br /><br />
+
+        <label for="desi" class="form-label">Designation:</label>
+        <input type="text" id="desi" class="form-control" required>
+        <p id="six"></p><br />
+
+        <label for="email" class="form-label">Email ID:</label>
+        <input
+          type="email"
+          id="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          class="form-control" required>
+          <p id="three"></p>
+        <br />
+
+        <label for="salary" class="form-label">Salary:</label>
+        <input type="text" id="salary" class="form-control" required>
+        <p id="four"></p>
+        <br />
+
+        <label for="location" class="form-label">Location:</label><br />
+        <select name="location" id="location" class="form-control w-100">
+          <option value="state" id="def" disabled selected>Choose a Location</option>
+          <option value="Surat">Surat</option>
+          <option value="Ahmedabad">Ahmedabad</option>
+          <option value="Rajkot">Rajkot</option>
+          <option value="Vadodara">Vadodara</option>
+        </select>
+        <p id="loc"></p><br />
+
+       
+        <label for="doj" class="form-label">Date of Joining:</label>
+        <input type="date" id="doj" class="form-control" required>
+        <br /><br />
+
+        <label for="cn">Contact number:</label>
+        <input type="text" id="cn" class="form-control" required>
+        <p id="info"></p>
+        <br />
+        <button type="button" class="w-50 form-control" id="save" value="Submit" onclick="validate() ">Submit</button>
+        
+        <br>
+      </form>
+      
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
